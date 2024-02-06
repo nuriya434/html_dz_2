@@ -1,52 +1,53 @@
 body {
-    background-color: brown;
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
 header {
-    background-color: blueviolet;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
+    background-color: orange;
+    padding: 100px;
 }
 
-.red-square, .blue-square, .green-square {
+.strip {
+    background-color: #8F9779;
+    height: 80px;
+}
+
+.profile-wrapper {
+    display: flex;
+    justify-content: space-between; /* Располагаем профили слева, посередине и справа */
+    padding: 20px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin-bottom: 10px; /* Расстояние между кругом и прямоугольником */
+}
+
+.profile-rectangle {
     width: 50px;
-    height: 50px;
+    height: 30px;
+    background-color: #ccc;
 }
 
-.red-square {
-    background-color: red;
+.color-black {
+    background-color: black;
 }
 
-.blue-square {
-    background-color: blue;
-}
-
-main {
-    background-color: white;
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer {
-    background-color: yellow;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.green-square {
+.color-green {
     background-color: green;
-    margin: 0 5px;
+}
+
+.color-blue {
+    background-color: blue;
 }
